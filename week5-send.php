@@ -7,12 +7,12 @@
 <body>
     <form action="week5-receive.php" method="get">
         <Lable>username</Lable>
-        <input type="text"name="username">
+        <input type="text"name="username" required>
         <br>
 
 
         <label>password</label>
-        <input type="password" name="userpass">
+        <input type="password" name="userpass" required>
         <br>
 
         <label>email</label>
@@ -32,7 +32,7 @@
         <input type="radio" name="userGender" value="หญิง">หญิง
         <br>
 
-        <laber>จังหวัด</laber>
+        <label>จังหวัด</label>
         <select name="userCity">
             <option value="ไม่ระบุ">-</option>
             <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
@@ -43,9 +43,14 @@
         <input type="checkbox" name="userHobby[]" value="อ่านหนังสือ">อ่านหนังสือ
         <input type="checkbox" name="userHobby[]" value="เล่นกีฬา">เล่นกีฬา
         <br>
-           
+
+        <label>ความคิดเห็น</label>
+        <textarea name="userMsg"></textarea>
+        <br> 
+        
         
         <input type="submit" value="ส่งข้อมูล">
+        <input type="reset" value="ล้างข้อมูล">
 
     </form>
 </body>
