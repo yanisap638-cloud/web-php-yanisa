@@ -10,7 +10,7 @@
     $skills = isset($_GET['skills']) ? implode(', ', $_GET['skills']) : 'ไม่ได้เลือก';
     $userMsg = $_GET['userMsg'];
 
-    echo "<h2>ข้อมูลที่ส่งมา:</h2>";
+    echo "<h2>ข้อมูล</h2>";
     echo "<p><strong>ชื่อ-นามสกุล:</strong> " . htmlspecialchars($name) . "</p>";
     echo "<p><strong>อีเมล:</strong> " . htmlspecialchars($email) . "</p>";
     echo "<p><strong>เบอร์โทรศัพท์:</strong> " . htmlspecialchars($phone) . "</p>";
